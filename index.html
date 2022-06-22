@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="count">Time</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+
+        <div id="initial-container" class="hide">
+            <h2>All Done! Please enter your intitals!</h2>
+            <h3 id="score"></h3>
+            <form id="submit-initials">
+                <label for="initials">Enter initials:</label>
+                <input type="text" id="initials" name="initials"><br><br>
+                <button id="submitButton" class="btn">Submit</button>
+            </form>
+        </div>
+        
+        <div id="initial-display" class="hide"></div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
